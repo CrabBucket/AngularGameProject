@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GameBoardComponent } from './game-board/game-board.component';
+import { TetrisPieceComponent } from './tetris-piece/tetris-piece.component';
+import { HoldBoxComponent } from './hold-box/hold-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GameBoardComponent
+    GameBoardComponent,
+    TetrisPieceComponent,
+    HoldBoxComponent
   ],
   imports: [
     BrowserModule,
