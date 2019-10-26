@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { GameBoardComponent } from './game-board/game-board.component';
 import { TetrisPieceComponent } from './tetris-piece/tetris-piece.component';
 import { HoldBoxComponent } from './hold-box/hold-box.component';
+import { ViewBoxComponent } from './view-box/view-box.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GameBoardComponent,
     TetrisPieceComponent,
-    HoldBoxComponent
+    HoldBoxComponent,
+    ViewBoxComponent,
+    MainMenuComponent
   ],
   imports: [
     BrowserModule,
