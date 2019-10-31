@@ -41,13 +41,17 @@ export class GameBoardComponent implements OnInit {
 
       s.setup = () => {
         s.createCanvas(window.innerWidth/4, window.innerHeight*.8);
-        this.test = new Box(0,0,s.width/this.width);
+        s.fill('red');
+        s.strokeWeight(2);
+        s.stroke('grey');
+        this.test = new Box(1,1,s.width/this.width);
       };
 
       s.draw = () => {
         s.scale(1, -1);
         s.translate(0, -s.height);
         s.background(0);
+        
         this.test.draw(s,s.width/this.width);
       };
 
