@@ -1,21 +1,20 @@
-import {GameBoardComponent} from './game-board.component';
-
+import {GameBoardComponent} from './game-board/game-board.component';
+import * as p5 from 'p5';
 export class Box {
     x: number;
     y: number;
     width: number;
     height: number;
     board: GameBoardComponent;
-    constructor(board:GameBoardComponent,x:number,y:number) {
-        this.width = board.canvas.width/board.width;
-        this.height = board.canvas.height/board.height;
-        this.x=1;
-        this.y=1;
-        this.board = board;
-    }
+    constructor(x: number,y: number, width:number) {
+        this.width = width;
+        this.height = width;
+        this.x=x;
+        this.y=y;
 
-    draw():void{
-        this.board.canvas.rect(this.x,this.y,this.width,this.height);
     }
+    draw(canvas: p5,width:number): void {
+        canvas.rect(this.x,this.y,width,width);
+    };
     
 }

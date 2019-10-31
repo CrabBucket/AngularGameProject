@@ -9,7 +9,7 @@ import { TetrisPieceComponent } from './tetris-piece/tetris-piece.component';
 import { HoldBoxComponent } from './hold-box/hold-box.component';
 import { ViewBoxComponent } from './view-box/view-box.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
-import { Box } from './Box';
+
 
 @NgModule({
   declarations: [
@@ -18,15 +18,16 @@ import { Box } from './Box';
     TetrisPieceComponent,
     HoldBoxComponent,
     ViewBoxComponent,
-    MainMenuComponent,
-    Box
+    MainMenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
