@@ -9,10 +9,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-menu.component.scss']
 })
 export class MainMenuComponent implements OnInit {
+  show: boolean;
 
   constructor() { }
 
   ngOnInit() {
+    this.show = true;
+  }
+  onClick():void{
+    this.show=false;
+    console.log("test");
+    
   }
 
 }
