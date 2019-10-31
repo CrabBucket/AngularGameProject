@@ -10,14 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainMenuComponent implements OnInit {
   show: boolean;
-
+  playing: boolean;
   constructor() { }
 
   ngOnInit() {
     this.show = true;
+    this.playing = false;
   }
   onClick():void{
     this.show=false;
+    this.playing=true;
     console.log("test");
     
   }
