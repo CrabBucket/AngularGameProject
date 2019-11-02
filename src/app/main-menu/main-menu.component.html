@@ -1,1 +1,33 @@
-<p>main-menu works!</p>
+<div id="menucontrol" *ngIf="show"> 
+    <div class ="buttons">
+        <h1> Welcome To Terisimo </h1>
+    </div>
+
+    <div class="buttons">
+    
+    
+
+    <button mat-raised-button color="accent" (click)="onClick()">Start New Game</button>
+
+    </div>
+
+    <div class = "buttons">
+    <!-- @todo Create a Controls element onclick
+         @body Create an onclick function for controls that creates a controls element  -->
+    <button mat-raised-button color="accent">Controls</button>
+
+    </div>
+
+
+
+
+
+</div>
+
+<div id="board" *ngIf="playing">
+    
+    <app-game-board></app-game-board>
+
+
+</div>
+
